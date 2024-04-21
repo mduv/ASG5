@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 
+
 function main() {
+
 
 	const canvas = document.querySelector( '#c' );
 	const renderer = new THREE.WebGLRenderer( { antialias: true, canvas } );
@@ -63,8 +65,9 @@ function main() {
     const cylinder = makeInstance(cylinderGeometry, 0xaa8844, 2);
 
 	// Adjust your cubes array to include the new shapes
+
     const shapes = [cube, sphere, cylinder];
-    
+        
     function render( time ) {
 
 		time *= 0.001; // convert time to seconds
